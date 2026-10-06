@@ -762,14 +762,15 @@
 
         // Initialize Firebase
         const appId = typeof __app_id !== 'undefined' ? __app_id : 'e-absensi-default-app';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
-            apiKey: "AIzaSyDemoKeyHere",
-            authDomain: "e-absensi.firebaseapp.com",
-            projectId: "e-absensi-app",
-            storageBucket: "e-absensi.appspot.com",
-            messagingSenderId: "123456789",
-            appId: "1:123456789:web:abcdef"
-        };
+        const firebaseConfig = {
+  apiKey: "AIzaSyAUPvc-vPqj8ZpBebtWDHCTRrAAn6u6xwA",
+  authDomain: "e-absensi-aa357.firebaseapp.com",
+  databaseURL: "https://e-absensi-aa357-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "e-absensi-aa357",
+  storageBucket: "e-absensi-aa357.firebasestorage.app",
+  messagingSenderId: "432774630592",
+  appId: "1:432774630592:web:3999e41c53bb5a786a3125"
+};
 
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
